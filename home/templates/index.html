@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Owwn Django Project</title>
+</head>
+<body>
+    <h1>This is my Django Project</h1>
+    {% for people in peoples %}
+    {{ forloop.counter }}
+        <h2>
+            My name is <b> {{people.name}} </b>
+        </h2>
+        <h3>
+            Having age {{ people.age }}
+        </h3>
+    {% endfor%}
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque debitis expedita excepturi veritatis repellendus sint impedit animi voluptatibus distinctio magnam totam iure quidem facere sapiente est aliquam ducimus, deserunt harum?</p>
+</body>
+</html>
